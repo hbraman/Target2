@@ -1,0 +1,22 @@
+Feature: User Login to Target Website and Buy an Item on Weekly Offer
+
+Scenario: User logs in to the Target Web Application
+Given the user launches the Target application
+Then the user scrolls to view today's offers on the main page
+
+Scenario: User clicks Deals button and selects Weekly Ad
+Given the user clicks the Deals list button
+When the user clicks to select Weekly Ad and navigates to the Weekly Ad page
+Then the user scrolls to view the items
+
+Scenario: User clicks Browse by Category and selects School & Office Supplies
+Given the user clicks the Browse by Category drop-down button
+When the user clicks to select School & Office Supplies
+And the user clicks to select the one offer ad and the items list menu opens
+And the user clicks to select the lowest-priced color pencils or crayons
+Then the user clicks the Add to Cart button to add the selected item to the checkout page
+
+Scenario: Take a screenshot and remove items from the cart
+Given the user scrolls to view the checkout page and takes a screenshot
+When the user removes the selected items from the cart
+Then the user clicks the Go to the Homepage button and navigates to the home page
