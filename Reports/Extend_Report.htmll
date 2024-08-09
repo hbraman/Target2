@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 9, 2024 06:57:30 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 8, 2024 02:59:46 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +71,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+											<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -152,10 +152,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>13</span> others
 				</div>
 			</div>
 		</div>
@@ -169,149 +169,149 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>User Login to Target Website and Buy an Item on Weekly Offer</span>
-						<span class='test-time'>Aug 9, 2024 06:57:31 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Aug 8, 2024 02:59:46 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 1m 31s+760ms</span>
+<div class='scenario node' test-id='2' status='skip'>
+	<span class='duration right label'>0h 0m 0s+259ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User logs in to the Target Web Application</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node given skip' status='skip'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given the user launches the Target application</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='4' class='node then pass' status='pass'>
+		<li test-id='4' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the user scrolls to view today's offers on the main page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='5' status='pass'>
-	<span class='duration right label'>0h 0m 30s+309ms</span>
+<div class='scenario node' test-id='5' status='skip'>
+	<span class='duration right label'>0h 0m 0s+35ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User clicks Deals button and selects Weekly Ad</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='6' class='node given pass' status='pass'>
+		<li test-id='6' class='node given skip' status='skip'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given the user clicks the Deals list button</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='7' class='node when pass' status='pass'>
+		<li test-id='7' class='node when skip' status='skip'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When the user clicks to select Weekly Ad and navigates to the Weekly Ad page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='8' class='node then pass' status='pass'>
+		<li test-id='8' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the user scrolls to view the items</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='9' status='pass'>
-	<span class='duration right label'>0h 1m 7s+571ms</span>
+<div class='scenario node' test-id='9' status='skip'>
+	<span class='duration right label'>0h 0m 0s+109ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User clicks Browse by Category and selects School & Office Supplies</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='10' class='node given pass' status='pass'>
+		<li test-id='10' class='node given skip' status='skip'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given the user clicks the Browse by Category drop-down button</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='11' class='node when pass' status='pass'>
+		<li test-id='11' class='node when skip' status='skip'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When the user clicks to select School & Office Supplies</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='12' class='node and pass' status='pass'>
+		<li test-id='12' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And the user clicks to select the one offer ad and the items list menu opens</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='13' class='node and pass' status='pass'>
+		<li test-id='13' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And the user clicks to select the lowest-priced color pencils or crayons</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='14' class='node then pass' status='pass'>
+		<li test-id='14' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the user clicks the Add to Cart button to add the selected item to the checkout page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='15' status='pass'>
-	<span class='duration right label'>0h 0m 14s+784ms</span>
+<div class='scenario node' test-id='15' status='skip'>
+	<span class='duration right label'>0h 0m 0s+42ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Take a screenshot and remove items from the cart</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='16' class='node given pass' status='pass'>
+		<li test-id='16' class='node given skip' status='skip'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given the user scrolls to view the checkout page and takes a screenshot</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='17' class='node when pass' status='pass'>
+		<li test-id='17' class='node when skip' status='skip'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When the user removes the selected items from the cart</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
-		<li test-id='18' class='node then pass' status='pass'>
+		<li test-id='18' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the user clicks the Go to the Homepage button and navigates to the home page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>undefined</div>
 			
 		</li>
 	</ul>
@@ -371,19 +371,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 9, 2024 06:57:30 PM</div>
+					<div class='panel-lead'>Aug 8, 2024 02:59:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 9, 2024 07:00:56 PM</div>
+			 		<div class='panel-lead'>Aug 8, 2024 02:59:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>206,038ms</div>
+					<div class='panel-lead'>1,081ms</div>
 				</div>
 			</div>
 		</div>
@@ -396,31 +396,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 0,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 1,
+				exceptionsParent: 1,
 				
-				passChild: 4,
+				passChild: 0,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 4,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 4,
 				
-				passGrandChild: 13,
+				passGrandChild: 0,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 13,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 13,
 			};
 		</script>
 		

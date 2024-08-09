@@ -4,23 +4,22 @@ import org.openqa.selenium.WebDriver;
 
 import com.baseclass1.copy.BaseClass;
 import com.sdp.Target_PageObjectManager;
-import com.targettoy.runner.TargetRunner1;
-
+import com.targettoy.runner.TargetRunner;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class TargetStepdefinition1 extends BaseClass{
-
-	public static WebDriver driver = TargetRunner1.driver;
 	
+	public static WebDriver driver = TargetRunner.driver;
 	public static Target_PageObjectManager tpom= new Target_PageObjectManager(driver);
+	
 	
 	@Given("^the user launches the Target application$")
 	public void the_user_launches_the_Target_application() throws Throwable {
-		
-		//getUrl("https://www.target.com/");
-	 driver.get("https://www.target.com/");
+		sleep(3000);
+		getUrl("https://www.target.com/");
+	// driver.get("https://www.target.com/");
 	}
 
 	@Then("^the user scrolls to view today's offers on the main page$")
@@ -32,7 +31,8 @@ public class TargetStepdefinition1 extends BaseClass{
 	   scrollUp(0,-3000);
 	   scrollUp(0,-3000);
 	   scrollUp(0,-3000);
-	   clickOnElement(tpom.getMainPage().getCategories());
+	   
+	clickOnElement(tpom.getMainPage().getCategories());
 	}
 
 	@Given("^the user clicks the Deals list button$")
@@ -64,21 +64,23 @@ public class TargetStepdefinition1 extends BaseClass{
 	}
 	@When("^the user clicks to select School & Office Supplies$")
 	public void the_user_clicks_to_select_School_Office_Supplies() throws Throwable {
-	   clickOnElement(tpom.getByCatagory().getColourPencils());
+	   
+	   clickOnElement(tpom.getByCatagory().getSchoolAndOfficeSelect());
 	   sleep(2000);
 	}
 
 	@When("^the user clicks to select the one offer ad and the items list menu opens$")
 	public void the_user_clicks_to_select_the_third_offer_ad_and_the_items_list_menu_opens() throws Throwable {
-	   clickOnElement(tpom.getByCatagory().getLowestprice());
+		clickOnElement(tpom.getByCatagory().getColourPencils());
 	   sleep(2000);
 	}
 
 	@When("^the user clicks to select the lowest-priced color pencils or crayons$")
 	public void the_user_clicks_to_select_the_lowest_priced_color_pencils_or_crayons() throws Throwable {
-	    clickOnElement(tpom.getByCatagory().getOptions());
+	   // clickOnElement(tpom.getByCatagory().getOptions());
 	    sleep(2000);
-	    clickOnElement(tpom.getByCatagory().getSchoolAndOfficeSelect());
+	    
+	    clickOnElement(tpom.getByCatagory().getLowestprice());
 	}
 
 	@Then("^the user clicks the Add to Cart button to add the selected item to the checkout page$")

@@ -2,17 +2,16 @@ package com.targettoy.runner;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+
 
 import com.baseclass1.copy.BaseClass;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\java\\com\\targetDeal\\feature\\Target.feature1",
@@ -23,17 +22,19 @@ strict=true,
 plugin = {"html:Reports/Html_Reports","pretty","json:Reports/Json_Reports.json",
 "com.cucumber.listener.ExtentCucumberFormatter:Reports/Extend_Report.html"})
 
-public class TargetRunner1  {
+public class TargetRunner extends BaseClass{
 	public static WebDriver driver;
 	
 	@BeforeClass
 	public static void targetSetup() {
 		
-		//driver = browserlaunch("chrome");
-		WebDriverManager.chromedriver().setup();
-		driver =new ChromeDriver();
+		driver = browserlaunch("chrome");
+		//WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mr.Prem\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
+		//driver =new ChromeDriver();
 		
-		driver.manage().window().maximize();
+		
+		//driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		
@@ -42,7 +43,5 @@ public class TargetRunner1  {
 	public static void tearDown() {
 		driver.close();
 	}
-	
-
-	
 }
+
